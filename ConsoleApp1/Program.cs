@@ -6,15 +6,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string name = "Tom";
-            int age = 33;
-            bool isEmlpoyed = false;
-            double weight = 78.65;
-
-            Console.WriteLine($"name: {name}");
-            Console.WriteLine($"Age: {age}");
-            Console.WriteLine($"IsEmployed: {isEmlpoyed}");
-            Console.WriteLine($"weigth: {weight}");
+            Console.Write("Введите имя: ");
+            string name = Console.ReadLine();
+            Console.Write("Введите возраст: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите рост: ");
+            double height = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите размер зарплаты: ");
+            decimal salary = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine($"Имя: {name}  Возраст: {age}  Рост: {height}м  Зарплата: {salary}$");
         }
     }
 }
