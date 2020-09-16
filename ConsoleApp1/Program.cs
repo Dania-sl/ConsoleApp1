@@ -6,7 +6,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!");
+            string name = "Tom";
+            int age = 33;
+            bool isEmlpoyed = false;
+            double weight = 78.65;
+
+            Console.WriteLine($"name: {name}");
+            Console.WriteLine($"Age: {age}");
+            Console.WriteLine($"IsEmployed: {isEmlpoyed}");
+            Console.WriteLine($"weigth: {weight}");
         }
     }
 }
